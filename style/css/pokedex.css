@@ -75,10 +75,6 @@
     background-color: #f9aec7;
 }
 
-.cotent h1 {
-    margin: 0;
-}
-
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
@@ -95,6 +91,12 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+}
+
+.pokemon:hover {
+    box-shadow: 2.5px 5px #888888;;
+    filter: contrast(1.5);
+
 }
 
 .pokemon .number {

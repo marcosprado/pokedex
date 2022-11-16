@@ -18,6 +18,11 @@ body {
     width: 100vw;
 }
 
-h1 {
-    color: #fff;
+.content h1 {
+    margin: 0;
 }
+
+.logo {
+    display: flex;
+    justify-content: center;
+   }
