@@ -15,7 +15,9 @@ function newPokemon(pokemonDetail) {
 function displayPokemon(pokemonDetail) {
   let pokemon = newPokemon(pokemonDetail);
 
-  return `<li class="pokemon ${pokemon.mainType}">
+  return `<li class="pokemon ${pokemon.mainType}" onclick="goToAnotherPage(${
+    pokemonDetail.id
+  })">
         <span class="number">${pokemon.number}</span>
         <span class="name">${pokemon.name.capitalize()}</span>
         <div class="detail">
@@ -42,4 +44,8 @@ async function getPokemonData(number) {
   for (i = 1; i <= limit; i++) {
     const pokemonPromise = await getPokemonData(i);
   }
-})(151);
+})(10);
+
+function goToAnotherPage(pokemonId) {
+  window.location = "/pokemon.html";
+}
