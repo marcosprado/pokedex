@@ -44,8 +44,8 @@ async function getPokemonData(number) {
   for (i = 1; i <= limit; i++) {
     const pokemonPromise = await getPokemonData(i);
   }
-})(10);
+})(151);
 
 function goToAnotherPage(pokemonId) {
-  window.location = "/pokemon.html";
+  window.location = "./pokemon.html";
 }
